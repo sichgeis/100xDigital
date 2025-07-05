@@ -10,7 +10,9 @@
       --primary: #32428f;
       --accent: #77b6ea;
       --text: #222;
-      --muted: #777;
+      --muted: #555;
+      --summary-bg: #eef5fa;
+      --summary-border: #b8d2eb;
       --radius: 10px;
       --max-width: 750px;
     }
@@ -34,6 +36,19 @@
       max-width: var(--max-width);
       width: 100%;
       padding: 2.5rem 2rem;
+    }
+    .summary {
+      background: var(--summary-bg);
+      border-left: 5px solid var(--summary-border);
+      border-radius: var(--radius);
+      color: var(--muted);
+      padding: 1.4em 1.4em 1.4em 1.2em;
+      margin-bottom: 2.2em;
+      box-shadow: 0 1px 6px rgba(50,66,143,0.04);
+      font-size: 1.06em;
+    }
+    .summary strong {
+      color: var(--primary);
     }
     h1, h2 {
       color: var(--primary);
@@ -59,6 +74,10 @@
       main {
         padding: 1.2rem 0.5rem;
       }
+      .summary {
+        font-size: 1em;
+        padding: 1em 0.9em 1em 0.9em;
+      }
       h1 {
         font-size: 1.3rem;
       }
@@ -70,6 +89,11 @@
 </head>
 <body>
 <main>
+  <div class="summary">
+    <strong>Kurz&nbsp;zusammengefasst:</strong>  
+    Das Forum Waageplatz-Viertel setzt sich für eine offene, solidarische Nachbarschaft ein, in der Vielfalt und Teilhabe gelebt werden. Um die Kommunikation und Zusammenarbeit im Viertel zu verbessern und digitale Hürden abzubauen, wird die digitale Infrastruktur grundlegend erneuert. Das Projekt schafft eine mehrsprachige Website, interne digitale Werkzeuge und gezielte Bildungsangebote, damit alle Menschen – unabhängig von Herkunft, Alter oder Sprache – aktiv am nachbarschaftlichen Leben teilhaben können. So entsteht ein inklusiver, zukunftsfähiger digitaler Raum, der den sozialen Zusammenhalt stärkt und als Vorbild für digitale Teilhabe wirkt.
+  </div>
+
   <h1>Digitalisierung im Forum Waageplatz-Viertel</h1>
   
   <h2>1. Über das Forum Waageplatz-Viertel</h2>
